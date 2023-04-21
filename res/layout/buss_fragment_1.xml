@@ -11,7 +11,7 @@
         android:id="@+id/textView"
         android:layout_width="338dp"
         android:layout_height="31dp"
-        android:text="Транспорт любви 🚃🚎🚋🚕♥️"
+        android:text="Транспорт"
         android:textColor="#FFFFFF"
         android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"

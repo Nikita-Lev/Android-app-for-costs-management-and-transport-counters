@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bus_frag"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="338dp"
+        android:layout_height="31dp"
+        android:text="Транспорт любви 🚃🚎🚋🚕♥️"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.00999999" />
+
+    <Button
+        android:id="@+id/addTr"
+        android:layout_width="53dp"
+        android:layout_height="46dp"
+        android:background="@android:drawable/ic_input_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/arr_group_tr"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kind_tr" />
+
+    <Button
+        android:id="@+id/tram_but"
+        android:layout_width="56dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/tram"
+        app:layout_constraintEnd_toStartOf="@+id/auto_but"
+        app:layout_constraintHorizontal_bias="0.537"
+        app:layout_constraintStart_toEndOf="@+id/bus_but"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/bus_but"
+        android:layout_width="42dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bus"
+        app:layout_constraintBottom_toTopOf="@+id/kind_tr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.186" />
+
+    <Button
+        android:id="@+id/auto_but"
+        android:layout_width="48dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="69dp"
+        android:background="@drawable/car"
+        app:layout_constraintBottom_toTopOf="@+id/kind_tr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.989"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.19" />
+
+    <TextView
+        android:id="@+id/kind_tr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="612dp"
+        android:text="Автобусы: 0"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tram_but"
+        app:layout_constraintVertical_bias="0.166" />
+
+    <TextView
+        android:id="@+id/dat_tr"
+        android:layout_width="144dp"
+        android:layout_height="26dp"
+        android:layout_marginEnd="3dp"
+        android:gravity="bottom|right"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/auto_but"
+        app:layout_constraintVertical_bias="0.013" />
+</androidx.constraintlayout.widget.ConstraintLayout>

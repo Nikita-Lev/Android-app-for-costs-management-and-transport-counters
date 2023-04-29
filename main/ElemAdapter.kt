@@ -20,9 +20,6 @@ class ElemAdapter(private val listArr: ArrayList<Lister>, private val context: C
             summ_id.text = listI.summ_i
             time_id.text = listI.time_i
 
-            //itemView.setOnClickListener (){
-            // Что делать при нажатии на элемент
-            // }
         }
     }
 
